@@ -88,9 +88,9 @@ object Day15PatternMatching extends App {
     case Person("valdis", relation, speed) => s"Oh hi Valdis, your relation is $relation, speed - $speed"
     case Person(name, relation, speed) => s"Oh hi generic Person! your name is $name your relation is $relation, speed - $speed"
     //    case Dog("Dzulbars") => "found a dog named Dzulbars"
-    //    case Car("Ford","Black", "T") => "a black model T Ford"
+    //    case com.Github.saule2022.Car("Ford","Black", "T") => "a black model T Ford"
     //    //we can match on some specific property of of our class
-    //    case Car("VW",color, model) => s"VW model: $model color: $color"
+    //    case com.Github.saule2022.Car("VW",color, model) => s"VW model: $model color: $color"
     // typed patterns
     case s: String => s"you gave me this string: $s"
     case i: Int => s"thanks for the int: $i"
@@ -131,10 +131,10 @@ object Day15PatternMatching extends App {
   println(echoWhatYouGaveMe(Person("martins", "father", 125)))
   println(echoWhatYouGaveMe(Person("maija", "daughter", 125)))
 
-  //  println(echoWhatYouGaveMe(Car()))
-  //  println(echoWhatYouGaveMe(Car("VW")))
-  //  println(echoWhatYouGaveMe(Car("VW", "yellow", "Touran")))
-  //  println(echoWhatYouGaveMe(Car("Peugot"))) //this goes to default and gets pretty printed because Car is a case class
+  //  println(echoWhatYouGaveMe(com.Github.saule2022.Car()))
+  //  println(echoWhatYouGaveMe(com.Github.saule2022.Car("VW")))
+  //  println(echoWhatYouGaveMe(com.Github.saule2022.Car("VW", "yellow", "Touran")))
+  //  println(echoWhatYouGaveMe(com.Github.saule2022.Car("Peugot"))) //this goes to default and gets pretty printed because com.Github.saule2022.Car is a case class
   println(echoWhatYouGaveMe(Map((1, "one"), (2, "two"), (5, "Five"))))
 
   //
