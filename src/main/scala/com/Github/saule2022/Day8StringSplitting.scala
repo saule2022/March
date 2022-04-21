@@ -12,6 +12,8 @@ object Day8StringSplitting extends App {
 
   val words = greeting.split(" ") //so we we say split our string by space
   println(words.mkString(","))
+
+
   val newGreeting = words.mkString(",")
   //we create a new sequence of word lengths
   val wordLengths = for (word <- words) yield word.length

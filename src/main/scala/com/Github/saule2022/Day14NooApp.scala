@@ -24,7 +24,7 @@ object Day14noApp {
     }
   }
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]):Unit = {
     println("Starting main function")
     for (arg <- args) {
       //all arguments are strings we can cast them to something else if we want
